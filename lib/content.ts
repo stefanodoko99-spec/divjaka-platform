@@ -8,7 +8,6 @@ export const content = {
   al: {
     nav: {
       links: [
-        { id: "projekti", label: "Projekti" },
         { id: "platforma", label: "Platforma" },
         { id: "destinacionet", label: "Destinacionet" },
         { id: "paketat", label: "Paketat" },
@@ -52,31 +51,8 @@ export const content = {
       "Pishë-Poro",
       "Asistencë në 6 gjuhë",
     ],
-    intro: {
-      index: "01",
-      eyebrow: "Qëllimi i projektit",
-      title: "Një destinacion që vizitohet offline dhe shitet offline. Platforma ndryshon të dyja.",
-      body:
-        "Divjakë–Karavasta pret vizitorë që mbërrijnë pa itinerar, pa rezervim dhe pa informacion të besueshëm. Akomodimi, guidat, udhëtimet me varkë dhe prodhuesit vendas punojnë secili më vete, përmes telefonatave dhe mesazheve. Platforma i bashkon të gjitha në një ekosistem të vetëm dixhital.",
-      problemTitle: "Çfarë ndodh sot",
-      solutionTitle: "Çfarë bën platforma",
-      problems: [
-        "Rezervimet merren me telefon dhe mesazhe, pa një kalendar të përbashkët disponueshmërie.",
-        "Informacioni për parkun, shtigjet dhe koloninë e pelikanëve është i shpërndarë ose i vjetruar.",
-        "Vizitorët e huaj nuk kanë asistencë në gjuhën e tyre sapo mbërrijnë.",
-        "Ndërmjetësit marrin një marzh mbi çdo qëndrim dhe çdo ekskursion.",
-        "Kërkesa bie jashtë korrikut dhe gushtit; pjesa tjetër e vitit mbetet e padukshme.",
-      ],
-      solutions: [
-        "Një motor rezervimesh me inventar të njëkohësuar për çdo strukturë partnere.",
-        "Një burim i vetëm i verifikuar për parkun: specie, shtigje, orare, baticat dhe moti.",
-        "Asistencë në shqip, anglisht, italisht, gjermanisht, frëngjisht dhe spanjisht, 24/7.",
-        "Shitje direkte mes vizitorit dhe biznesit vendas, me pagesë të sigurt.",
-        "Paketa birdwatching, kulture dhe gastronomie që mbajnë kërkesën jashtë sezonit.",
-      ],
-    },
     platform: {
-      index: "02",
+      index: "01",
       eyebrow: "Platforma",
       title: "Gjashtë module. Një llogari. Gjithçka që i duhet vizitorit dhe pritësit.",
       body:
@@ -133,9 +109,9 @@ export const content = {
       ],
     },
     destinations: {
-      index: "03",
+      index: "02",
       eyebrow: "Destinacionet",
-      title: "Çfarë shet në të vërtetë platforma.",
+      title: "Çfarë ofron platforma.",
       body:
         "Shtatë vende brenda parkut dhe përgjatë bregut, secili me sezonin e vet, rregullat e veta të aksesit dhe orën e vet më të mirë të ditës.",
       drag: "Tërhiq",
@@ -192,7 +168,7 @@ export const content = {
       ],
     },
     packages: {
-      index: "04",
+      index: "03",
       eyebrow: "Paketat",
       title: "Rezervohen gjatë qëndrimit, nga dhoma, në më pak se një minutë.",
       body:
@@ -209,7 +185,7 @@ export const content = {
       ],
     },
     marketplace: {
-      index: "05",
+      index: "04",
       eyebrow: "Marketplace",
       title: "Dyqani virtual i zonës, i hapur gjithë vitin.",
       body:
@@ -259,7 +235,7 @@ export const content = {
       ],
     },
     objectives: {
-      index: "06",
+      index: "05",
       eyebrow: "Objektivat e projektit",
       title: "Gjashtë objektiva, secili me një numër pas vetes.",
       body: "Këto janë angazhimet ndaj të cilave matet projekti.",
@@ -303,7 +279,7 @@ export const content = {
       ],
     },
     impact: {
-      index: "07",
+      index: "06",
       eyebrow: "Si matet projekti",
       title: "Çfarë ndiqet dhe raportohet çdo tremujor.",
       body:
@@ -336,7 +312,7 @@ export const content = {
       ],
     },
     hotel: {
-      index: "08",
+      index: "07",
       eyebrow: "Aplikanti",
       title: "Hotel Pelikan — njëzet vjet mes detit dhe pishave.",
       body1:
@@ -352,7 +328,7 @@ export const content = {
       ],
     },
     roadmap: {
-      index: "09",
+      index: "08",
       eyebrow: "Plani i zbatimit",
       title: "Katër faza gjatë tetëmbëdhjetë muajve.",
       body: "Çdo fazë mbyllet me diçka që funksionon në duart e një mysafiri real, jo me një dokument.",
@@ -425,7 +401,6 @@ export const content = {
   en: {
     nav: {
       links: [
-        { id: "projekti", label: "Project" },
         { id: "platforma", label: "Platform" },
         { id: "destinacionet", label: "Destinations" },
         { id: "paketat", label: "Packages" },
@@ -469,31 +444,8 @@ export const content = {
       "Pishë-Poro",
       "Assistance in 6 languages",
     ],
-    intro: {
-      index: "01",
-      eyebrow: "Purpose of the project",
-      title: "A destination visited offline, and sold offline. The platform changes both.",
-      body:
-        "Divjakë–Karavasta receives visitors who arrive with no itinerary, no booking and no reliable information. Accommodation, guides, boat trips and local producers each work on their own, through phone calls and messages. The platform brings all of it into one digital ecosystem.",
-      problemTitle: "What happens today",
-      solutionTitle: "What the platform does",
-      problems: [
-        "Bookings are taken by phone and direct message, with no shared calendar of availability.",
-        "Information about the park, the trails and the pelican colony is scattered or out of date.",
-        "Foreign visitors have no assistance in their own language once they arrive.",
-        "Intermediaries take a margin on every stay and every excursion.",
-        "Demand collapses outside July and August; the rest of the year is invisible.",
-      ],
-      solutions: [
-        "One booking engine with live inventory shared by every accommodation partner.",
-        "A single, verified source for the park: species, trails, opening times, tides and weather.",
-        "Assistance in Albanian, English, Italian, German, French and Spanish, around the clock.",
-        "Direct sales between the visitor and the local business, with secure payment.",
-        "Birdwatching, culture and gastronomy packages that carry demand into the off-season.",
-      ],
-    },
     platform: {
-      index: "02",
+      index: "01",
       eyebrow: "The platform",
       title: "Six modules. One account. Everything the visitor and the host need.",
       body:
@@ -550,9 +502,9 @@ export const content = {
       ],
     },
     destinations: {
-      index: "03",
+      index: "02",
       eyebrow: "Destinations",
-      title: "What the platform actually sells.",
+      title: "What the platform offers.",
       body:
         "Seven places inside the park and along the coast, each with its own season, its own access rules and its own best hour of the day.",
       drag: "Drag",
@@ -609,7 +561,7 @@ export const content = {
       ],
     },
     packages: {
-      index: "04",
+      index: "03",
       eyebrow: "Packages",
       title: "Booked during the stay, from the room, in under a minute.",
       body:
@@ -626,7 +578,7 @@ export const content = {
       ],
     },
     marketplace: {
-      index: "05",
+      index: "04",
       eyebrow: "Marketplace",
       title: "The area's virtual shop, open all year.",
       body:
@@ -676,7 +628,7 @@ export const content = {
       ],
     },
     objectives: {
-      index: "06",
+      index: "05",
       eyebrow: "Project objectives",
       title: "Six objectives, each with a number attached to it.",
       body: "These are the commitments the project is measured against.",
@@ -720,7 +672,7 @@ export const content = {
       ],
     },
     impact: {
-      index: "07",
+      index: "06",
       eyebrow: "How the project is measured",
       title: "What is tracked and reported each quarter.",
       body:
@@ -753,7 +705,7 @@ export const content = {
       ],
     },
     hotel: {
-      index: "08",
+      index: "07",
       eyebrow: "The applicant",
       title: "Hotel Pelikan — twenty years between the sea and the pines.",
       body1:
@@ -769,7 +721,7 @@ export const content = {
       ],
     },
     roadmap: {
-      index: "09",
+      index: "08",
       eyebrow: "Roadmap",
       title: "Four phases over eighteen months.",
       body: "Each phase ends with something that works in the hands of a real guest, not with a document.",

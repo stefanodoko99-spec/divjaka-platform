@@ -815,69 +815,6 @@ img {
   flex: none;
 }
 
-/* ---------- intro / problem-solution ---------- */
-.psGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
-  gap: clamp(20px, 3vw, 40px);
-  margin-top: clamp(44px, 6vw, 84px);
-}
-.psCol {
-  border-radius: var(--r);
-  padding: clamp(24px, 3vw, 38px);
-  border: 1px solid var(--line);
-}
-.psCol.problem {
-  background: transparent;
-}
-.psCol.solution {
-  background: var(--card);
-  border-color: transparent;
-  box-shadow: 0 30px 70px -40px rgba(0, 0, 0, 0.45);
-}
-.psCol h3 {
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.psCol h3 i {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  flex: none;
-}
-.psCol.problem h3 i {
-  background: var(--flamingo);
-}
-.psCol.solution h3 i {
-  background: var(--lagoon-2);
-}
-.psCol li {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 14px;
-  padding-block: 14px;
-  border-top: 1px solid var(--line-soft);
-  font-size: 14.5px;
-  line-height: 1.55;
-}
-.psCol li:first-child {
-  border-top: 0;
-}
-.psCol li b {
-  font-family: var(--font-mono), monospace;
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  color: var(--muted);
-  padding-top: 4px;
-}
-.psCol.problem li {
-  color: var(--muted);
-}
-
 /* ---------- platform modules ---------- */
 .modules {
   margin-top: clamp(44px, 6vw, 80px);
