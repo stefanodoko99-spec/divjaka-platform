@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "next build && npx --yes wrangler pages deploy out --project-name divjaka-platform"
+    "deploy": "next build && wrangler deploy"
   },
   "dependencies": {
     "gsap": "^3.15.0",
@@ -20,6 +20,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.152.0"
   }
 }

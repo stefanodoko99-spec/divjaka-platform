@@ -1,5 +1,11 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "divjaka-platform",
-  "pages_build_output_dir": "out"
+  "compatibility_date": "2026-10-19",
+  // A static export served straight from Cloudflare's edge — no Worker script,
+  // just the files in out/. 404.html handles unknown paths.
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
 }
