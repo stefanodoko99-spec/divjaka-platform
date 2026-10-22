@@ -49,7 +49,7 @@ export default function Hotel() {
 
           <div className="hotelArt" ref={art}>
             <Image
-              src="/images/pines.jpg"
+              src="/images/pines.webp"
               alt="Pylli i pishave pranë Hotel Pelikan, Divjakë"
               fill
               sizes="(max-width: 900px) 100vw, 46vw"

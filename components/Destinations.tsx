@@ -76,7 +76,7 @@ export default function Destinations() {
               <div className="destImg">
                 <span className="destNum">{String(i + 1).padStart(2, "0")}</span>
                 <Image
-                  src={`/images/${d.img}.jpg`}
+                  src={`/images/${d.img}.webp`}
                   alt={d.title}
                   fill
                   sizes="(max-width: 1100px) 76vw, 30vw"

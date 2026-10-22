@@ -83,7 +83,7 @@ export default function Platform() {
               </div>
               <div className="moduleArt">
                 <Image
-                  src={`/images/${m.img}.jpg`}
+                  src={`/images/${m.img}.webp`}
                   alt={m.title}
                   fill
                   sizes="(max-width: 900px) 100vw, 40vw"

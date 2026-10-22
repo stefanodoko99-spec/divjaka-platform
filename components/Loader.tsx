@@ -61,7 +61,7 @@ export default function Loader({ onDone }: { onDone: () => void }) {
       };
       img.onload = mark;
       img.onerror = mark;
-      img.src = `/images/${slug}.jpg`;
+      img.src = `/images/${slug}.webp`;
       imgs.push(img);
     });
 
@@ -164,7 +164,7 @@ export default function Loader({ onDone }: { onDone: () => void }) {
         <div className="loaderThumbs">
           {PRELOAD.map((slug, i) => (
             <span className={`loaderThumb${done[i] ? " on" : ""}`} key={slug}>
-              <span style={{ backgroundImage: `url(/images/${slug}.jpg)` }} />
+              <span style={{ backgroundImage: `url(/images/${slug}.webp)` }} />
             </span>
           ))}
         </div>

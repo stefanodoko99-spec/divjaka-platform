@@ -83,7 +83,7 @@ export default function Packages() {
       </section>
 
       <div className="pkFloat" ref={float} aria-hidden="true">
-        <Image src={`/images/${shot}.jpg`} alt="" fill sizes="260px" />
+        <Image src={`/images/${shot}.webp`} alt="" fill sizes="260px" />
       </div>
     </>
   );

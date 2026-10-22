@@ -59,7 +59,7 @@ export default function Hero() {
     <header className="hero" id="hero" ref={root}>
       <div className="heroMedia">
         <Image
-          src="/images/hero-lagoon.jpg"
+          src="/images/hero-lagoon.webp"
           alt="Laguna e Karavastasë në Parkun Kombëtar Divjakë–Karavasta"
           fill
           priority
