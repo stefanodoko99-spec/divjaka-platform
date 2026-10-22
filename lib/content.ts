@@ -145,14 +145,14 @@ export const content = {
           title: "Laguna e Karavastasë",
           body:
             "42 km² ujë i njelmët, i ndarë nga Adriatiku prej një brezi rëre — laguna më e madhe në Shqipëri dhe një nga më të mëdhatë në Mesdhe.",
-          meta: ["Varkë · 90 min", "Gjithë vitin", "42 km²"],
+          meta: ["Me varkë", "Gjithë vitin", "42 km²"],
         },
         {
           img: "tower-pelican",
           title: "Kulla e Pelikanëve",
           body:
-            "Një kullë druri që sheh drejt kolonisë së riprodhimit të pelikanit kaçurrel. Më e mira mes orës 06:00 dhe 09:00. Aksesi kufizohet gjatë çeljes së zogjve.",
-          meta: ["Agim · 2 orë", "Me guidë", "Pelecanus crispus"],
+            "Një kullë druri që sheh drejt kolonisë së riprodhimit të pelikanit kaçurrel. Më e mira herët në mëngjes. Aksesi kufizohet gjatë çeljes së zogjve.",
+          meta: ["Në agim", "Me guidë", "Pelecanus crispus"],
         },
         {
           img: "flamingos",
@@ -166,7 +166,7 @@ export const content = {
           title: "Pylli i Pishave, Pishë-Poro",
           body:
             "Pisha mesdhetare mes lagunës dhe plazhit, e përshkuar nga shtigje të shënuara për ecje dhe biçikletë. Hije përgjatë gjithë gushtit.",
-          meta: ["Ecje · biçikletë", "Gjithë vitin", "4 shtigje"],
+          meta: ["Ecje · biçikletë", "Gjithë vitin", "Pishë-Poro"],
         },
         {
           img: "visitor-centre",
@@ -179,15 +179,15 @@ export const content = {
           img: "sandbars",
           title: "Brezi i rërës dhe plazhi",
           body:
-            "Tetë kilometra rërë e imët me pyllin e pishave që zbret deri te uji — pa shëtitore, pa mur betoni. Dielli perëndon drejt e në Adriatik nga këtu.",
-          meta: ["8 km", "Maj – Tetor", "Perëndim 19:30–20:40"],
+            "Rërë e imët me pyllin e pishave që zbret deri te uji — pa shëtitore, pa mur betoni. Dielli perëndon drejt e në Adriatik nga këtu.",
+          meta: ["Plazh", "Maj – Tetor", "Adriatik"],
         },
         {
           img: "castle",
           title: "Divjaka dhe trashëgimia",
           body:
             "Tregu, kuzhinat e së dielës, kalaja në hyrje të qytetit dhe historitë që nuk hyjnë kurrë në një broshurë. Itinerare kulturore me pritës vendas.",
-          meta: ["Gjysmë dite", "Gjithë vitin", "Pritës vendas"],
+          meta: ["Gjithë vitin", "Pritës vendas", "Kalaja e Divjakës"],
         },
       ],
     },
@@ -196,16 +196,16 @@ export const content = {
       eyebrow: "Paketat",
       title: "Rezervohen gjatë qëndrimit, nga dhoma, në më pak se një minutë.",
       body:
-        "Një mysafir në Hotel Pelikan hap platformën, sheh çfarë zhvillohet nesër dhe e shton te fatura e dhomës. Çmimet janë orientuese për person.",
-      note: "Paketat kombinohen me çdo qëndrim. Çmim grupi nga 6 persona.",
+        "Një mysafir në Hotel Pelikan hap platformën, sheh çfarë zhvillohet nesër dhe e shton te qëndrimi i vet.",
+      note: "Paketat kombinohen me çdo qëndrim.",
       items: [
-        { n: "01", name: "Zgjimi i Pelikanëve", when: "Agim · 3 orë · Mar–Qer", price: "€35", img: "tower-pelican" },
-        { n: "02", name: "Laguna me Kajak", when: "Paradite · 4 orë · Pri–Tet", price: "€45", img: "lagoon" },
-        { n: "03", name: "Shtigjet e Pishave", when: "Gjysmë dite · Gjithë vitin", price: "€28", img: "pines" },
-        { n: "04", name: "Tryeza e Lagunës", when: "Mbrëmje · 3 orë · Gjithë vitin", price: "€40", img: "fisherman-house" },
-        { n: "05", name: "Perëndimi mbi Rërë", when: "Mbrëmje · 2 orë · Maj–Sht", price: "€22", img: "sandbars" },
-        { n: "06", name: "Trashëgimia e Divjakës", when: "Gjysmë dite · Gjithë vitin", price: "€30", img: "castle" },
-        { n: "07", name: "Birdwatching Dimëror", when: "Ditë e plotë · Nën–Shk", price: "€55", img: "flamingos-flight" },
+        { n: "01", name: "Zgjimi i Pelikanëve", when: "Agim · Mars–Qershor", img: "tower-pelican" },
+        { n: "02", name: "Laguna me Kajak", when: "Paradite · Prill–Tetor", img: "lagoon" },
+        { n: "03", name: "Shtigjet e Pishave", when: "Gjithë vitin", img: "pines" },
+        { n: "04", name: "Tryeza e Lagunës", when: "Mbrëmje · Gjithë vitin", img: "fisherman-house" },
+        { n: "05", name: "Perëndimi mbi Rërë", when: "Mbrëmje · Maj–Shtator", img: "sandbars" },
+        { n: "06", name: "Trashëgimia e Divjakës", when: "Gjithë vitin", img: "castle" },
+        { n: "07", name: "Birdwatching Dimëror", when: "Nëntor–Shkurt", img: "flamingos-flight" },
       ],
     },
     objectives: {
@@ -339,19 +339,18 @@ export const content = {
       placeholder: "emri@shembull.com",
       submit: "Kërko akses",
       invalid: "Shkruani një adresë emaili të vlefshme.",
-      sent: "Vetëm demonstrim — asgjë nuk u dërgua. Shkruani te info@hotelpelikan.al.",
-      disclaimer:
-        "Kjo faqe është demonstruese. Formulari ende nuk dërgon asgjë — përdorni të dhënat në krah.",
+      sent: "Faleminderit — do t'ju kontaktojmë së shpejti.",
+      disclaimer: "Formulari është demonstrues dhe ende nuk dërgon asgjë.",
       copy: "Kopjo",
       copied: "U kopjua",
       address:
-        "Rruga e Plazhit, Divjakë 9022, Qarku i Fierit, Shqipëri. Të dhënat e kontaktit janë vendmbajtëse për demonstrimin.",
+        "Hoteli ndodhet në Divjakë, pranë parkut kombëtar dhe bregut të Adriatikut.",
     },
     footer: {
       park: "Parku Kombëtar Divjakë–Karavasta · Zonë Ramsar 781",
-      credits: "Fotografitë: Wikimedia Commons",
+      credits: "Kreditet e fotografive",
       creditsNote:
-        "Të gjitha fotografitë vijnë nga Wikimedia Commons me licenca të lira. Autorët dhe licencat renditen më poshtë.",
+        "Fotografitë vijnë nga Wikimedia Commons me licenca CC0, CC BY dhe CC BY-SA, të cilat kërkojnë atribuim.",
       back: "Kthehu lart",
     },
   },
@@ -496,14 +495,14 @@ export const content = {
           title: "Karavasta Lagoon",
           body:
             "42 km² of brackish water held back from the Adriatic by a sand bar — the largest lagoon in Albania and one of the largest in the Mediterranean.",
-          meta: ["Boat · 90 min", "All year", "42 km²"],
+          meta: ["By boat", "All year", "42 km²"],
         },
         {
           img: "tower-pelican",
           title: "The Pelican Tower",
           body:
-            "A wooden hide looking onto the breeding colony of the Dalmatian pelican. Best between 06:00 and 09:00. Access is restricted while the birds are nesting.",
-          meta: ["Dawn · 2 h", "Guide required", "Pelecanus crispus"],
+            "A wooden hide looking onto the breeding colony of the Dalmatian pelican. Best early in the morning. Access is restricted while the birds are nesting.",
+          meta: ["At dawn", "Guide required", "Pelecanus crispus"],
         },
         {
           img: "flamingos",
@@ -517,7 +516,7 @@ export const content = {
           title: "Pishë-Poro Pine Forest",
           body:
             "Mediterranean pine running between the lagoon and the beach, laced with marked walking and cycling trails. Shade through the whole of August.",
-          meta: ["Walk · bike", "All year", "4 marked trails"],
+          meta: ["Walk · bike", "All year", "Pishë-Poro"],
         },
         {
           img: "visitor-centre",
@@ -530,15 +529,15 @@ export const content = {
           img: "sandbars",
           title: "The sand bar and the beach",
           body:
-            "Eight kilometres of fine sand with the pine forest coming right down to it — no promenade, no concrete wall. The sun sets straight into the Adriatic from here.",
-          meta: ["8 km", "May – October", "Sunset 19:30–20:40"],
+            "Fine sand with the pine forest coming right down to it — no promenade, no concrete wall. The sun sets straight into the Adriatic from here.",
+          meta: ["Beach", "May – October", "Adriatic"],
         },
         {
           img: "castle",
           title: "Divjaka and its heritage",
           body:
             "The market, the Sunday kitchens, the castle at the entrance to the town and the stories that never make it into a brochure. Cultural routes with local hosts.",
-          meta: ["Half day", "All year", "Local hosts"],
+          meta: ["All year", "Local hosts", "Divjaka castle"],
         },
       ],
     },
@@ -547,16 +546,16 @@ export const content = {
       eyebrow: "Packages",
       title: "Booked during the stay, from the room, in under a minute.",
       body:
-        "A guest at Hotel Pelikan opens the platform, sees what is running tomorrow, and adds it to the room bill. Prices are indicative per person.",
-      note: "Packages are combinable with any stay. Group rates from 6 people.",
+        "A guest at Hotel Pelikan opens the platform, sees what is running tomorrow, and adds it to their stay.",
+      note: "Packages are combinable with any stay.",
       items: [
-        { n: "01", name: "The Pelicans Wake", when: "Dawn · 3 h · Mar–Jun", price: "€35", img: "tower-pelican" },
-        { n: "02", name: "The Lagoon by Kayak", when: "Morning · 4 h · Apr–Oct", price: "€45", img: "lagoon" },
-        { n: "03", name: "Pine Trails by Bike", when: "Half day · All year", price: "€28", img: "pines" },
-        { n: "04", name: "Lagoon Table", when: "Evening · 3 h · All year", price: "€40", img: "fisherman-house" },
-        { n: "05", name: "Sunset on the Sand Bar", when: "Evening · 2 h · May–Sep", price: "€22", img: "sandbars" },
-        { n: "06", name: "Heritage of Divjaka", when: "Half day · All year", price: "€30", img: "castle" },
-        { n: "07", name: "Winter Birdwatching", when: "Full day · Nov–Feb", price: "€55", img: "flamingos-flight" },
+        { n: "01", name: "The Pelicans Wake", when: "Dawn · March–June", img: "tower-pelican" },
+        { n: "02", name: "The Lagoon by Kayak", when: "Morning · April–October", img: "lagoon" },
+        { n: "03", name: "Pine Trails by Bike", when: "All year", img: "pines" },
+        { n: "04", name: "Lagoon Table", when: "Evening · All year", img: "fisherman-house" },
+        { n: "05", name: "Sunset on the Sand Bar", when: "Evening · May–September", img: "sandbars" },
+        { n: "06", name: "Heritage of Divjaka", when: "All year", img: "castle" },
+        { n: "07", name: "Winter Birdwatching", when: "November–February", img: "flamingos-flight" },
       ],
     },
     objectives: {
@@ -690,19 +689,17 @@ export const content = {
       placeholder: "name@example.com",
       submit: "Request access",
       invalid: "Enter a valid email address.",
-      sent: "Demonstration only — nothing was sent. Write to info@hotelpelikan.al.",
-      disclaimer:
-        "This page is a demonstration. The form does not send anything yet — use the details on the right.",
+      sent: "Thank you — we will be in touch shortly.",
+      disclaimer: "The form is a demonstration and does not send anything yet.",
       copy: "Copy",
       copied: "Copied",
-      address:
-        "Rruga e Plazhit, Divjakë 9022, Fier County, Albania. Contact details are placeholders for the demonstration.",
+      address: "The hotel is in Divjakë, beside the national park and the Adriatic coast.",
     },
     footer: {
       park: "Divjakë–Karavasta National Park · Ramsar site 781",
-      credits: "Photographs: Wikimedia Commons",
+      credits: "Photograph credits",
       creditsNote:
-        "All photographs come from Wikimedia Commons under free licences. Authors and licences are listed below.",
+        "Photographs come from Wikimedia Commons under CC0, CC BY and CC BY-SA licences, which require attribution.",
       back: "Back to top",
     },
   },
@@ -723,8 +720,9 @@ export const TECH = [
   "WCAG 2.2 AA",
 ];
 
+/* Only details that are actually true. The hotel's own phone and email go
+   here once they are confirmed. */
 export const CONTACT = [
-  { label: "Telefon", value: "+355 69 000 0000" },
-  { label: "Email", value: "info@hotelpelikan.al" },
-  { label: "Koordinatat", value: "40.9333, 19.5000" },
+  { label: "Vendndodhja", value: "Divjakë, Qarku i Fierit, Shqipëri" },
+  { label: "Koordinatat", value: "40°56′N 19°30′E" },
 ];

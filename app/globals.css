@@ -1064,7 +1064,7 @@ img {
 .pkRow {
   position: relative;
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   gap: clamp(12px, 2.6vw, 36px);
   align-items: center;
   padding-block: clamp(18px, 2.2vw, 28px);
@@ -1097,7 +1097,6 @@ img {
   padding-inline: clamp(10px, 2vw, 28px);
 }
 .pkRow:hover .pkWhen,
-.pkRow:hover .pkPrice,
 .pkRow:hover .pkNum {
   color: inherit;
 }
@@ -1110,13 +1109,6 @@ img {
   font-size: 11px;
   letter-spacing: 0.08em;
   color: var(--muted);
-  white-space: nowrap;
-}
-.pkPrice {
-  font-family: var(--font-display), sans-serif;
-  font-size: clamp(18px, 1.8vw, 26px);
-  letter-spacing: -0.03em;
-  color: var(--accent);
   white-space: nowrap;
 }
 .pkFloat {
@@ -1138,11 +1130,11 @@ img {
 }
 @media (max-width: 880px) {
   .pkRow {
-    grid-template-columns: auto minmax(0, 1fr) auto;
-    gap: 10px 16px;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 8px 16px;
   }
   .pkWhen {
-    grid-column: 2 / -1;
+    grid-column: 2;
     font-size: 10px;
   }
   .pkFloat {
@@ -1532,7 +1524,42 @@ img {
   margin-left: auto;
 }
 .credits {
-  margin-top: 26px;
+  margin-top: 24px;
+}
+.credits > summary {
+  cursor: pointer;
+  color: #6f8792;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.25s;
+}
+.credits > summary::-webkit-details-marker {
+  display: none;
+}
+.credits > summary::before {
+  content: "+";
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  line-height: 1;
+}
+.credits[open] > summary::before {
+  content: "–";
+}
+.credits > summary:hover {
+  color: #eef5f1;
+}
+.creditsNote {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #6f8792;
+  max-width: 62ch;
+}
+.copyLabel {
+  color: var(--muted);
+  min-width: 92px;
 }
 .creditsList {
   display: grid;

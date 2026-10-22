@@ -69,7 +69,6 @@ export default function Packages() {
                 <span className="pkNum num">{p.n}</span>
                 <span className="pkName">{p.name}</span>
                 <span className="pkWhen">{p.when}</span>
-                <span className="pkPrice num">{p.price}</span>
               </button>
             ))}
           </div>

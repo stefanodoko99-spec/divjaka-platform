@@ -36,13 +36,11 @@ export default function Footer() {
           </button>
         </div>
 
-        <div className="credits">
-          <p className="mono" style={{ opacity: 0.8 }}>
-            {c.credits}
-          </p>
-          <p className="mono" style={{ opacity: 0.5, marginTop: 8, textTransform: "none", letterSpacing: 0 }}>
-            {c.creditsNote}
-          </p>
+        {/* The CC BY and CC BY-SA licences require attribution, so the list
+            stays — folded away rather than filling the footer. */}
+        <details className="credits">
+          <summary className="mono">{c.credits}</summary>
+          <p className="creditsNote">{c.creditsNote}</p>
           <ul className="creditsList">
             {credits.map((cr) => (
               <li key={cr.slug}>
@@ -53,7 +51,7 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-        </div>
+        </details>
       </div>
     </footer>
   );

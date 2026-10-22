@@ -73,6 +73,7 @@ export default function Contact() {
             </p>
             {CONTACT.map((row) => (
               <div className="copyRow" key={row.value}>
+                <span className="mono copyLabel">{row.label}</span>
                 <b className="num">{row.value}</b>
                 <button onClick={() => copy(row.value)} type="button">
                   {copied === row.value ? c.copied : c.copy}
