@@ -30,13 +30,23 @@ plain CSS with custom properties. No UI framework.
 - `components/` — one component per section, plus the loader, cursor, smooth scroll and nav.
 - `components/motion.ts` — GSAP registration and the reduced-motion / pointer checks.
 
+## Deploying
+
+The whole site prerenders, so it builds to static files (`output: "export"`) and needs no Node
+runtime. That also means the Next image optimizer is off and the photographs are pre-sized WebP.
+
+```bash
+npm run deploy   # next build, then wrangler pages deploy out
+```
+
+First time only: `npx wrangler login`.
+
 ## Before this goes to anyone official
 
-Two sets of numbers on the page are **placeholders**:
-
-1. **Contact details** (`CONTACT` in `lib/content.ts`) — phone, email and coordinates are invented.
-2. **The *Impakti* figures** (+40% sales, 60 businesses, 12k visitors) are 24-month targets and are
-   labelled as such on the page. They are not measured results.
+- **The hotel's real phone and email** still need adding to `CONTACT` in `lib/content.ts`. It
+  currently carries only the location and coordinates, which are true.
+- **The *Impakti* figures** (+40% sales, 60 businesses, 12k visitors) are 24-month targets and are
+  labelled as such on the page. They are not measured results.
 
 The facts about the park are verified: 222 km² protected area, 42 km² lagoon (the largest in
 Albania), 230+ bird species recorded, roughly 5% of the world's Dalmatian pelicans, Ramsar
