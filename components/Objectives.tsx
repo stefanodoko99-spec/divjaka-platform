@@ -37,7 +37,7 @@ export default function Objectives() {
   };
 
   return (
-    <section className="sec" id="objektivat" data-tone="sand">
+    <section className="sec" id="objektivat" data-tone="shell">
       <div className="wrap">
         <FadeIn className="eyebrow mono">
           <i />

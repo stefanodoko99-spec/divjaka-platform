@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Hotel from "@/components/Hotel";
 import Impact from "@/components/Impact";
 import Intro from "@/components/Intro";
+import Marketplace from "@/components/Marketplace";
 import Marquee from "@/components/Marquee";
 import Objectives from "@/components/Objectives";
 import Packages from "@/components/Packages";
@@ -20,6 +21,7 @@ export default function Page() {
       <Platform />
       <Destinations />
       <Packages />
+      <Marketplace />
       <Objectives />
       <Impact />
       <Hotel />

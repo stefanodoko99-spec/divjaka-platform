@@ -2,11 +2,13 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useLang } from "./LangContext";
+import { useBasket } from "./BasketContext";
 import { gsap, ScrollTrigger, isFinePointer, prefersReducedMotion, useGsapSetup } from "./motion";
 
 export default function Nav() {
   useGsapSetup();
   const { t, lang, setLang } = useLang();
+  const { count, setOpen } = useBasket();
   const bar = useRef<HTMLElement>(null);
   const progress = useRef<HTMLSpanElement>(null);
   const [solid, setSolid] = useState(false);
@@ -49,8 +51,8 @@ export default function Nav() {
     };
   }, []);
 
-  /* magnetic pull on the call to action */
-  const ctaRef = useRef<HTMLAnchorElement>(null);
+  /* magnetic pull on the basket button */
+  const ctaRef = useRef<HTMLButtonElement>(null);
   useEffect(() => {
     const el = ctaRef.current;
     if (!el || !isFinePointer() || prefersReducedMotion()) return;
@@ -124,15 +126,20 @@ export default function Nav() {
             <span>EN</span>
           </button>
         </div>
-        <a
-          className="btn btnSolid"
-          href="#kontakt"
+        <button
+          className="btn btnSolid basketBtn"
           ref={ctaRef}
-          onClick={(e) => go(e, "kontakt")}
-          data-cursor="Nis"
+          onClick={() => setOpen(true)}
+          data-cursor={t.marketplace.open}
+          aria-label={`${t.marketplace.basket} — ${count}`}
         >
-          <span>{t.nav.cta}</span>
-        </a>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
+            <path d="M4 7h16l-1.4 12.2a2 2 0 0 1-2 1.8H7.4a2 2 0 0 1-2-1.8Z" />
+            <path d="M8.6 7a3.4 3.4 0 0 1 6.8 0" strokeLinecap="round" />
+          </svg>
+          <span>{t.marketplace.basket}</span>
+          {count > 0 && <em className="basketCount num">{count}</em>}
+        </button>
       </div>
 
       <span className="navProgress" ref={progress} />
