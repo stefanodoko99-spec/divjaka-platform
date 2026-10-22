@@ -45,8 +45,12 @@ First time only: `npx wrangler login`.
 
 - **The hotel's real phone and email** still need adding to `CONTACT` in `lib/content.ts`. It
   currently carries only the location and coordinates, which are true.
-- **The *Impakti* figures** (+40% sales, 60 businesses, 12k visitors) are 24-month targets and are
-  labelled as such on the page. They are not measured results.
+
+The site deliberately carries **no invented figures**: no prices, no percentage targets, no visitor
+counts, no made-up durations or distances. Section 06 lists the indicators the project reports on
+rather than claiming numbers for them. The only quantities on the page are verifiable facts about
+the park (222 km², the 42 km² lagoon, 230+ bird species, Ramsar site 781). Keep it that way — add a
+figure only when there is a source for it.
 
 The facts about the park are verified: 222 km² protected area, 42 km² lagoon (the largest in
 Albania), 230+ bird species recorded, roughly 5% of the world's Dalmatian pelicans, Ramsar

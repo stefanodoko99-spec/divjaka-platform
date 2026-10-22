@@ -212,38 +212,37 @@ export const content = {
       index: "05",
       eyebrow: "Objektivat e projektit",
       title: "Gjashtë objektiva, secili me një numër pas vetes.",
-      body:
-        "Këto janë angazhimet ndaj të cilave matet projekti. Shifrat janë synime 24-mujore, jo rezultate aktuale.",
+      body: "Këto janë angazhimet ndaj të cilave matet projekti.",
       items: [
         {
           title: "Zhvillimi i një platforme e-commerce moderne dhe funksionale",
           body:
             "Një platformë intuitive dhe tërheqëse vizualisht, që e bën të thjeshtë kërkimin, zgjedhjen dhe blerjen online të produkteve dhe shërbimeve tona për klientët vendas dhe të huaj, me sistem pagese të sigurt dhe një proces blerjeje të reduktuar në thelbin e tij.",
-          kpis: ["Blerje në ≤ 3 hapa", "PWA, punon offline", "PCI-DSS"],
+          kpis: ["Proces i shkurtër blerjeje", "PWA, punon offline", "Pagesa të certifikuara"],
         },
         {
           title: "Përmirësimi i eksperiencës së përdoruesit dhe finalizimi i rezervimeve",
           body:
             "Një eksperiencë blerjeje e personalizuar, bazuar në historikun dhe preferencat e klientëve, me rekomandime automatike produktesh, oferta të posaçme dhe asistencë online 24/7 që mbështet gjithë procesin — nga pyetja e parë deri te çasti kur mysafiri përfiton produktin.",
-          kpis: ["Karroca të braktisura −30%", "Përgjigje e parë < 60 s", "6 gjuhë"],
+          kpis: ["Më pak rezervime të ndërprera", "Përgjigje e shpejtë", "6 gjuhë"],
         },
         {
           title: "Zgjerimi i tregut dhe rritja e shitjeve online",
           body:
             "Zgjerimi i tregut duke arritur klientë të rinj vendas dhe ndërkombëtarë përmes kanaleve dixhitale, fushatave të marketingut online dhe integrimit me platformat kryesore të e-commerce dhe rrjetet sociale, që kërkesa të mos varet më nga dy muaj të vitit.",
-          kpis: ["Shitje online +40%", "4 tregje të reja", "Zënia jashtë sezonit +25%"],
+          kpis: ["Shitje direkte online", "Tregje të reja", "Zënie jashtë sezonit"],
         },
         {
           title: "Rritja e konkurrueshmërisë së biznesit",
           body:
             "Përdorimi i teknologjisë e-commerce për të automatizuar proceset e shitjes, menaxhimin e inventarit dhe komunikimin me klientët, duke ulur kostot operative dhe duke përmirësuar pozicionimin e biznesit në tregun dixhital kombëtar dhe ndërkombëtar.",
-          kpis: ["Kohë administrative −50%", "Komisione ndërmjetësimi −20%"],
+          kpis: ["Më pak punë administrative", "Më pak ndërmjetës"],
         },
         {
           title: "Promovimi i trashëgimisë natyrore dhe kulturore të Divjakës",
           body:
             "Vënia në dispozicion e informacionit të besueshëm për trashëgiminë kulturore dhe natyrore të zonës për çdo vizitor, vendas e të huaj — specie, habitate, historia e ligatinës dhe rregullat që e mbajnë të paprekur — e prodhuar së bashku me administratën e parkut dhe Qendrën e Vizitorëve.",
-          kpis: ["7 dosje destinacioni", "Guidë fushe në 6 gjuhë", "Kod sjelljeje"],
+          kpis: ["Dosje destinacioni", "Guidë fushe në 6 gjuhë", "Kod sjelljeje"],
         },
         {
           title: "Monitorimi dhe përmirësimi i vazhdueshëm i platformës",
@@ -255,17 +254,35 @@ export const content = {
     },
     impact: {
       index: "06",
-      eyebrow: "Impakti i matshëm",
-      title: "Synime për 24 muajt e parë.",
+      eyebrow: "Si matet projekti",
+      title: "Çfarë ndiqet dhe raportohet çdo tremujor.",
       body:
-        "Çdo shifër më poshtë është një synim ndaj të cilit projekti angazhohet dhe raporton çdo tremujor. Asnjëra nuk përshkruan një rezultat të arritur.",
+        "Objektivat sasiorë caktohen së bashku me partnerët në nisje të platformës. Këtu renditen treguesit që ndiqen, jo premtime shifrash.",
       items: [
-        { v: 40, pre: "+", suf: "%", l: "Rritje e shitjeve direkte online për bizneset partnere" },
-        { v: 25, pre: "+", suf: "%", l: "Zënia jashtë sezonit korrik–gusht" },
-        { v: 60, pre: "", suf: "", l: "Biznese vendase të integruara në platformë" },
-        { v: 6, pre: "", suf: "", l: "Gjuhë të mbështetura deri në rezervim" },
-        { v: 30, pre: "−", suf: "%", l: "Rezervime të braktisura, me blerje më të shkurtër" },
-        { v: 12, pre: "", suf: "k", l: "Vizitorë të regjistruar deri në muajin e 24-t" },
+        {
+          k: "Shitjet direkte online",
+          d: "Vlera e rezervimeve të kryera drejtpërdrejt nga platforma, pa ndërmjetës.",
+        },
+        {
+          k: "Zënia jashtë sezonit",
+          d: "Netët e shitura jashtë korrikut dhe gushtit, muaj pas muaji.",
+        },
+        {
+          k: "Bizneset e integruara",
+          d: "Strukturat akomoduese, guidat dhe prodhuesit vendas aktivë në platformë.",
+        },
+        {
+          k: "Mbulimi gjuhësor",
+          d: "Gjuhët e mbështetura nga kërkimi i parë deri te konfirmimi i rezervimit.",
+        },
+        {
+          k: "Rezervimet e ndërprera",
+          d: "Sa e nisin një rezervim pa e mbyllur, dhe në cilin hap ndalen.",
+        },
+        {
+          k: "Vizitorët që kthehen",
+          d: "Llogaritë aktive dhe mysafirët që rezervojnë më shumë se një herë.",
+        },
       ],
     },
     hotel: {
@@ -308,7 +325,7 @@ export const content = {
             "Nisje publike me Hotel Pelikan si operator i parë",
             "Pagesa, faturim, politikë anulimi",
             "Shqip dhe anglisht, deri në rezervim",
-            "10 biznese të para partnere",
+            "Bizneset e para partnere",
           ],
         },
         {
@@ -562,38 +579,37 @@ export const content = {
       index: "05",
       eyebrow: "Project objectives",
       title: "Six objectives, each with a number attached to it.",
-      body:
-        "These are the commitments the project is measured against. The figures are 24-month targets, not current results.",
+      body: "These are the commitments the project is measured against.",
       items: [
         {
           title: "A modern, functional digital e-commerce platform",
           body:
             "An intuitive, visually convincing platform that makes searching, choosing and buying our products and services straightforward for domestic and foreign customers, with a secure payment system and a checkout process stripped down to what is necessary.",
-          kpis: ["Checkout in ≤ 3 steps", "PWA, works offline", "PCI-DSS"],
+          kpis: ["Short checkout", "PWA, works offline", "Certified payments"],
         },
         {
           title: "Better user experience and more completed bookings",
           body:
             "A personalised buying experience based on each customer's history and preferences, with automatic product recommendations, targeted offers and 24/7 online assistance supporting the whole purchase, from the first question to the moment the guest uses what they bought.",
-          kpis: ["Abandoned carts −30%", "First reply < 60 s", "6 languages"],
+          kpis: ["Fewer unfinished bookings", "Fast first reply", "6 languages"],
         },
         {
           title: "Market expansion and growth in online sales",
           body:
             "Reaching new domestic and international customers through digital channels, online marketing campaigns and integration with the major e-commerce platforms and social networks, so that demand no longer depends on two months of the year.",
-          kpis: ["Online sales +40%", "4 new source markets", "Off-season occupancy +25%"],
+          kpis: ["Direct online sales", "New source markets", "Off-season occupancy"],
         },
         {
           title: "Stronger competitiveness for the business",
           body:
             "Using e-commerce technology to automate the sales process, inventory management and customer communication — lowering operating costs and improving how the business is positioned in the national and international digital market.",
-          kpis: ["Admin time −50%", "Intermediary fees −20%"],
+          kpis: ["Less admin work", "Fewer intermediaries"],
         },
         {
           title: "Promotion of Divjaka's natural and cultural heritage",
           body:
             "Making reliable information about the cultural and natural heritage of the area available to every visitor, Albanian and foreign alike — species, habitats, the history of the wetland and the rules that keep it intact — produced with the park administration and the Visitor Centre.",
-          kpis: ["7 destination dossiers", "Field guide in 6 languages", "Visitor code of conduct"],
+          kpis: ["Destination dossiers", "Field guide in 6 languages", "Visitor code of conduct"],
         },
         {
           title: "Continuous monitoring and improvement of the platform",
@@ -605,17 +621,35 @@ export const content = {
     },
     impact: {
       index: "06",
-      eyebrow: "Measurable impact",
-      title: "Targets for the first 24 months.",
+      eyebrow: "How the project is measured",
+      title: "What is tracked and reported each quarter.",
       body:
-        "Every figure below is a target the project commits to and reports against each quarter. None of them describes a result already achieved.",
+        "Quantified targets are set with the partners when the platform launches. What follows are the indicators that get tracked, not promises of figures.",
       items: [
-        { v: 40, pre: "+", suf: "%", l: "Growth in direct online sales for partner businesses" },
-        { v: 25, pre: "+", suf: "%", l: "Occupancy outside the July–August season" },
-        { v: 60, pre: "", suf: "", l: "Local businesses onboarded onto the platform" },
-        { v: 6, pre: "", suf: "", l: "Languages supported end to end, booking included" },
-        { v: 30, pre: "−", suf: "%", l: "Abandoned bookings, through a shorter checkout" },
-        { v: 12, pre: "", suf: "k", l: "Target registered visitors by the end of month 24" },
+        {
+          k: "Direct online sales",
+          d: "The value of bookings made straight through the platform, with no intermediary.",
+        },
+        {
+          k: "Off-season occupancy",
+          d: "Nights sold outside July and August, month by month.",
+        },
+        {
+          k: "Businesses onboarded",
+          d: "Accommodation, guides and local producers active on the platform.",
+        },
+        {
+          k: "Language coverage",
+          d: "Languages supported from the first search through to booking confirmation.",
+        },
+        {
+          k: "Unfinished bookings",
+          d: "How many start a booking without completing it, and which step they stop at.",
+        },
+        {
+          k: "Returning visitors",
+          d: "Active accounts and guests who book more than once.",
+        },
       ],
     },
     hotel: {
@@ -658,7 +692,7 @@ export const content = {
             "Public launch with Hotel Pelikan as first operator",
             "Payments, invoicing, cancellation policy",
             "Albanian and English, end to end",
-            "First 10 partner businesses onboarded",
+            "First partner businesses onboarded",
           ],
         },
         {
